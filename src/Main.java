@@ -1,13 +1,7 @@
-package com.kkiarie.mypackage
+import com.kkiarie.mypackage.Sasii;
 public class Main {
     public static void main(String[] args) {
         Main mainInstance = new Main(); //creating an instance of the main class
-        //another class
-
-        System.out.println("Before creating Sasii instance");
-        Sasii SasiiInstance = new Sasii();
-        SasiiInstance.printMessage();
-        System.out.println("After creating Sasii instance");
         for (int i = 1; i <= 2; i++) {
             System.out.println("Outer: " + i);
 
@@ -22,6 +16,10 @@ public class Main {
         mainInstance.WhileBreak();
         mainInstance.WhileContinue();
         mainInstance.ArrayLearning();
+        System.out.println("Before creating Sasii instance");
+        Sasii sasiiInstance = new Sasii();
+        sasiiInstance.printMessage();
+        System.out.println("After creating Sasii instance");
 
     }
 

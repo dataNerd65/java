@@ -1,4 +1,4 @@
-package com.kkiarie.mypackage
+package com.kkiarie.mypackage;
 public class Sasii {
     public Sasii() {
         System.out.println("A new class in learning Java Arrays");
