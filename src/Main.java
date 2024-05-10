@@ -1,6 +1,6 @@
+//Demonstrating use of static classes that will yun on the Main class
 public class Main {
     public static void main(String[] args) {
-        Main mainInstance = new Main(); //creating an instance of the main class
         for (int i = 1; i <= 2; i++) {
             System.out.println("Outer: " + i);
 
@@ -9,15 +9,15 @@ public class Main {
                 System.out.println("Inner: " + j);
             }
         }
-        mainInstance.foreachLoop();
-        mainInstance.breakStatement();
-        mainInstance.continueStatement();
-        mainInstance.WhileBreak();
-        mainInstance.WhileContinue();
+        foreachLoop();
+        breakStatement();
+        continueStatement();
+        WhileBreak();
+        WhileContinue();
 
     }
 
-    public void foreachLoop() { //removing static keyword make this a non-static method
+    public static void foreachLoop() { //Using static keyword make this a static method that will run when called in the main class
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
         for (String k : cars) {
             System.out.println(k);
@@ -25,7 +25,7 @@ public class Main {
         }
     }
 
-    public void breakStatement() {
+    public static void breakStatement() {
         for (int i = 0; i < 10; i++) {
             if (i == 4) {
                 break;
@@ -34,7 +34,7 @@ public class Main {
         }
     }
 
-    public void continueStatement() {
+    public static void continueStatement() {
         for (int i = 0; i < 10; i++) {
             if (i == 4) {
                 continue;
@@ -43,7 +43,7 @@ public class Main {
         }
     }
 
-    public void WhileBreak() {
+    public static void WhileBreak() {
         int a = 0;
         while (a < 10) {
             System.out.println(a);
@@ -55,7 +55,7 @@ public class Main {
         }
 
     }
-    public void WhileContinue(){
+    public static void WhileContinue(){
         int o = 0;
         while(o < 10){
             if(o == 4){
