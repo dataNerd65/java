@@ -20,6 +20,7 @@ public class Main {
         Sasii sasiiInstance = new Sasii();
         sasiiInstance.printMessage();
         System.out.println("After creating Sasii instance");
+        sasiiInstance.MultiArrays();
 
     }
 
