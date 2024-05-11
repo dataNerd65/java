@@ -14,6 +14,7 @@ public class Main {
         continueStatement();
         WhileBreak();
         WhileContinue();
+        JavaLoop();
 
     }
 
@@ -66,4 +67,14 @@ public class Main {
             o++;
         }
     }
+    public static void JavaLoop(){
+        String [] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (int c =0; c < cars.length; c++){
+            System.out.println(cars[c]);
+        }
+        for (String car : cars){
+            System.out.println(car);
+        }
+    }
+
 }
