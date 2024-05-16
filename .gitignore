@@ -5,6 +5,7 @@ out/
 .auth
 workspace.xml
 uiDesigner.xml
+.idea
 
 ### Eclipse ###
 .apt_generated
@@ -29,4 +30,5 @@ bin/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store.idea/
+.idea/
