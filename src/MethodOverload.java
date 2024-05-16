@@ -1,5 +1,5 @@
 //Demonstrating use of method overloading in java
-//below using two methods is x and y but e and are utilising one which is plusMethod.
+//below using two methods is x and y but e and f are utilising one which is plusMethod.
 public class MethodOverload {
     static int plusMethod(int e, int d){
         return e + d;
